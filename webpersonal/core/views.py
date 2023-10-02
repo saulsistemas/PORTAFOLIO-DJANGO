@@ -4,6 +4,8 @@ html_base ="""
 <ul>
     <li><a href="/">Portada</a></li>
     <li><a href="/about-me/">Acerca de</a></li>
+    <li><a href="/porfolio/">Portafolio</a></li>
+    <li><a href="/contact/">Contacto</a></li>
 <ul>
 """
 # Create your views here.
@@ -17,3 +19,11 @@ def home(request):
 def about(request):
     nombre = "Saul";
     return HttpResponse(html_base+"<h2>Acerca de</h2><p>"+nombre+"</p>");
+
+def porfolio(request):
+    nombre = "Saul";
+    return HttpResponse(html_base+"<h2>Portafolio</h2><p>"+nombre+"</p>");
+
+def contact(request):
+    nombre = "Saul";
+    return HttpResponse(html_base+"<h2>Contacto</h2><p>"+nombre+"</p>");
