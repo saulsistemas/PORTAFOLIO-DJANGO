@@ -8,13 +8,10 @@ def home(request):
     return render(request,"core/home.html");
 
 def about(request):
-    nombre = "Saul";
-    return HttpResponse(html_base+"<h2>Acerca de</h2><p>"+nombre+"</p>");
+    return render(request,"core/about.html");
 
 def porfolio(request):
-    nombre = "Saul";
-    return HttpResponse(html_base+"<h2>Portafolio</h2><p>"+nombre+"</p>");
+    return render(request,"core/porfolio.html");
 
 def contact(request):
-    nombre = "Saul";
-    return HttpResponse(html_base+"<h2>Contacto</h2><p>"+nombre+"</p>");
+    return render(request,"core/contact.html");
