@@ -1,8 +1,24 @@
 
 {% extends 'core/base.html' %}
 {% block title %}Acerca de {% endblock title %}
-{% block content %}
-    <h2>Acerca de</h2>
-    <p>Esta es la protada</p>
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock  %}
 
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock  %}
+
+{% block content %}
+<div class="row">   
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Saul Santamaria</h2>   
+        <p>
+        Soy un profesional con años de experiencia en el área de sistemas, he sido capaz de adaptarme a los diferentes planes informáticos de las empresas para las que he trabajado. Adicionalmente, cuento con una gran capacidad de análisis de la información, capacidad de adaptación, aprendizaje rápido y excelente capacidad de comunicación, dispuesto a trabajar y aprender para lograr las metas y objetivos trazados por la empresa.
+        </p>
+    </div>
+</div>
+    
 {% endblock %}
